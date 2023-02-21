@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackc"
+    tools:context=".Edit">
+
+    <EditText
+        android:id="@+id/editTextDes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/backc"
+        android:ellipsize="end"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:gravity="start"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10sp"
+        android:paddingTop="5sp"
+        android:paddingRight="5sp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backc"
+        android:ellipsize="end"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Title"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10sp"
+        android:paddingTop="5sp"
+        android:paddingRight="5sp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDes"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_save_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
